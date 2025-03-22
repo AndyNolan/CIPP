@@ -31,9 +31,8 @@
     },
     {
       "route": "/login",
-      "redirect": "/.auth/login/aad" 
+      "redirect": "/.auth/login/aad"
     },
-
     {
       "route": "/.auth/login/twitter",
       "statusCode": 404
@@ -42,78 +41,150 @@
       "route": "/.auth/login/github",
       "statusCode": 404
     },
-
     {
       "route": "/logout",
       "redirect": "/.auth/logout?post_logout_redirect_uri=/LogoutRedirect"
     },
     {
       "route": "/api/ExecSAMSetup",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+      "allowedRoles": [
+        "admin",
+        "editor",
+        "readonly",
+        "authenticated",
+        "anonymous"
+      ]
     },
     {
       "route": "/api/AddStandardTemplate",
-      "allowedRoles": ["admin"]
+      "allowedRoles": [
+        "admin"
+      ]
     },
     {
       "route": "/api/RemoveStandardTemplate",
-      "allowedRoles": ["admin"]
+      "allowedRoles": [
+        "admin"
+      ]
     },
     {
       "route": "/LogoutRedirect",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+      "allowedRoles": [
+        "admin",
+        "editor",
+        "readonly",
+        "authenticated",
+        "anonymous"
+      ]
     },
     {
       "route": "/404",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+      "allowedRoles": [
+        "admin",
+        "editor",
+        "readonly",
+        "authenticated",
+        "anonymous"
+      ]
     },
     {
       "route": "/api/RemoveStandard",
-      "allowedRoles": ["admin"]
+      "allowedRoles": [
+        "admin"
+      ]
     },
     {
       "route": "/api/add*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": [
+        "admin",
+        "editor"
+      ]
     },
     {
       "route": "/api/edit*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": [
+        "admin",
+        "editor"
+      ]
     },
     {
       "route": "/api/ExecSendPush",
-      "allowedRoles": ["admin", "editor", "readonly"]
+      "allowedRoles": [
+        "admin",
+        "editor",
+        "readonly"
+      ]
     },
     {
       "route": "/api/ExecExcludeTenant",
-      "allowedRoles": ["admin"]
+      "allowedRoles": [
+        "admin"
+      ]
     },
     {
       "route": "/api/Exec*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": [
+        "admin",
+        "editor"
+      ]
     },
     {
       "route": "/api/Remove*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": [
+        "admin",
+        "editor"
+      ]
     },
     {
       "route": "/cipp/*",
-      "allowedRoles": ["admin"]
+      "allowedRoles": [
+        "admin"
+      ]
     },
     {
       "route": "/tenant/standards/*",
-      "allowedRoles": ["admin"]
+      "allowedRoles": [
+        "admin"
+      ]
     },
     {
       "route": "/",
-      "allowedRoles": ["admin", "editor", "readonly", "reader"]
+      "allowedRoles": [
+        "admin",
+        "editor",
+        "readonly",
+        "reader"
+      ]
     },
     {
       "route": "/api/Public*",
-      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated", "anonymous"]
+      "allowedRoles": [
+        "admin",
+        "editor",
+        "readonly",
+        "reader",
+        "authenticated",
+        "anonymous"
+      ]
     },
     {
       "route": "*",
-      "allowedRoles": ["admin", "editor", "readonly", "reader"]
+      "allowedRoles": [
+        "admin",
+        "editor",
+        "readonly",
+        "reader"
+      ]
+    },
+    {
+      "route": "/.auth/*",
+      "methods": [
+        "get",
+        "post"
+      ],
+      "allowedRoles": [
+        "anonymous"
+      ]
     }
   ],
   "navigationFallback": {
@@ -133,7 +204,10 @@
     "401": {
       "redirect": "/login",
       "statusCode": 302,
-      "exclude": ["/assets/illustrations/*.{png,jpg,gif}", "/css/*"]
+      "exclude": [
+        "/assets/illustrations/*.{png,jpg,gif}",
+        "/css/*"
+      ]
     },
     "403": {
       "rewrite": "/403"
