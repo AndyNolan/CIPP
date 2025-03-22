@@ -173,7 +173,8 @@
         "admin",
         "editor",
         "readonly",
-        "reader"
+        "reader",
+        "anonymous"
       ]
     }
   ],
