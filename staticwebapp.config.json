@@ -177,7 +177,7 @@
       ]
     },
     {
-      "route": "/.auth/*",
+      "route": "/.auth*",
       "allowedRoles": [
         "anonymous"
       ]
