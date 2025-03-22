@@ -178,10 +178,6 @@
     },
     {
       "route": "/.auth/*",
-      "methods": [
-        "get",
-        "post"
-      ],
       "allowedRoles": [
         "anonymous"
       ]
