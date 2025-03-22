@@ -175,12 +175,6 @@
         "readonly",
         "reader"
       ]
-    },
-    {
-      "route": "/.auth*",
-      "allowedRoles": [
-        "anonymous"
-      ]
     }
   ],
   "navigationFallback": {
