@@ -176,6 +176,9 @@
         "reader",
         "anonymous"
       ]
+    },
+    {
+      "route": "/.auth/me"
     }
   ],
   "navigationFallback": {
